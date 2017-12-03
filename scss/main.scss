@@ -1,12 +1,21 @@
-@include veriables;
-@include menu;
-@include header;
-@include about-me;
-@include knowledge;
-@include skills;
-@include biography;
-@include projects;
-@include clients-review;
-@include blog;
-@include contact;
-@include footer;
+
+
+
+/* -----IMPORTS FONTS---- */
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700');
+
+/* -----IMPORTS FILES---- */
+@import 'veriables';
+@import 'reset';
+@import 'menu';
+@import 'header';
+@import 'about-me';
+@import 'knowledge';
+@import 'skills';
+@import 'biography';
+@import 'projects';
+@import 'clients-review';
+@import 'blog';
+@import 'contact';
+@import 'footer';
