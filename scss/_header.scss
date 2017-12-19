@@ -23,6 +23,9 @@
         color: $header-main-color;
         font-family: $header-title-font;
         font-weight: 100;
+        position: relative;
+        @include slideIn('header-title',100px,2s);
+
         @media screen and (max-width: 709px){
             text-align: center;
             align-self: center;
@@ -35,17 +38,24 @@
             font-weight: 600;
             
         }
+
+      
     }
     .header-describle{
         align-self: flex-end;
         font-size: 2em;
         color:$header-describle-color;
         font-family: $header-title-font;
+        position: relative;
+        @include slideIn('header-describle',30px,1.5s,0);
+        
         @media screen and (max-width: 709px){
             text-align: center;
             margin-top:10px;
             align-self: center;
         }
+
+       
     }
     .header-move{
         width:100px;
@@ -57,7 +67,7 @@
         position: absolute;
         bottom:150px;
         left:-40px;
-
+        
         @media screen and (max-width: 709px){
             align-self: center;
             line-height: 1.3em;

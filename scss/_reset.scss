@@ -48,6 +48,9 @@ table {
 	font-size: $reset-fontsize;
 }
 .spinner-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -58,8 +61,7 @@ table {
 }
 .spinner {
 	position: absolute;
-	top: 42%;
-	left: 40%;
+	align-self: center;
 	border: 16px solid $spinner-border-color; /* Light grey */
     border-top: 16px solid $spinner-borderTop-color; /* Blue */
     border-radius: 50%;

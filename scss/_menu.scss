@@ -104,6 +104,8 @@
         font-family: $nav-logo-font;
         margin-left: 10px;
         font-weight: 600;
+        position: relative;
+        @include slideIn('navigation_logo',-30px,1.5s,0);
     }
 
     .navigation_menu{
