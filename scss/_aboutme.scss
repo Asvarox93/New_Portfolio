@@ -1,0 +1,116 @@
+#about-me{
+    padding-top:100px;
+    height: 65vh;
+    font-family: $about-font;
+    position: relative;
+    overflow: hidden;
+   
+    
+    .about-me-items{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .about-me-title{
+        font-size: 3em;
+        font-weight: bold;
+        position:relative;
+        //bottom:1px;
+        top:320px;
+        left:20px;
+        span{
+            color:$about-title-color;
+        }
+    }
+
+    .about-me-move{
+        transform: rotate(90deg);
+        position: absolute;
+        top:220px;
+        left:40px;
+        text-decoration: none;
+        color:$about-section-move;
+        font-size: 1.3em;
+        font-weight: bold;
+        
+    }
+
+    .about-me-info{
+        width:40%;
+        font-size: 1em;
+        line-height: 1.2em;
+        ;
+        .info-entry{
+            
+            font-weight: bold;
+        }
+        .info-describle{
+            margin:25px 0;
+            text-shadow: 1px 1px 1px #b9b9b9;
+            
+        }
+
+        .info-escape{
+            font-weight: bold;
+        }
+        .info-signature{
+            margin-top: 15px;
+            font-size: 2em;
+            font-weight: 400;
+            font-family: $about-signature-font;
+        }
+
+        .info-social-list{
+            margin-top:50px;
+            display: flex;
+            flex-direction: row;
+            
+
+            .social{
+                margin:20px;
+                font-size: 2.5em;
+                color:$about-social-color;
+                cursor: pointer;
+                transition: 0.2s ease-in-out all;
+                
+                &:hover{
+                    color:$about-social-color-hover;
+                }
+
+                &:first-child{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+    .about-me-cv{
+        background-image: url('./images/about-me-self.png');
+        width:30%;
+        height:500px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        
+        .about-me-btn{
+            border-radius: 30px;
+            background-color:$about-cvBtn-background;
+            border: 1px solid $about-cvBtn-border-color;
+            padding:15px 70px;
+            transition: 0.2s ease-in-out all;
+            color:$about-cvBtn-color;
+            text-decoration: none;
+            position: absolute;
+            //top:400px;
+            bottom:50px;
+            left:70px;
+                
+            &:hover{
+                background-color:$about-cvBtn-bgHover;
+                color:$about-cvBtn-color-hover;
+            }
+        }
+    }
+}
