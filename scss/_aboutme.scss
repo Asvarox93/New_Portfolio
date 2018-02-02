@@ -1,12 +1,10 @@
 #about-me{
-    padding-top:100px;
     font-family: $about-font;
     position: relative;
     overflow: hidden;
-    @media screen and (max-width: 1064px){
-        padding-top:0;
-    }
+    
     .about-me-items{
+        padding-top:50px;
         display: flex;
         flex-direction: row;
         margin: 0 auto;
@@ -34,14 +32,14 @@
     .about-me-move{
         transform: rotate(90deg);
         position: absolute;
-        top:120px;
+        top:170px;
         left:-30px;
         text-decoration: none;
         color:$about-section-move;
         font-size: 1.3em;
         font-weight: bold;
         @media screen and (max-width: 1064px){
-            top:300px;
+            top:265px;
         }
         
     }
@@ -53,7 +51,7 @@
         @media screen and (max-width: 1064px){
             width:80%;
             margin:0 2% 0 20%;
-            margin-top:50px;
+            
         }
         @media screen and (max-width: 777px){
             margin-left: 150px;
