@@ -15,7 +15,9 @@ const imagemin = require( 'gulp-imagemin' );
 const imgPngQuant = require( 'imagemin-pngquant' );
 const imgJpgRecompress = require( 'imagemin-jpeg-recompress' );
 
-
+const handleError = (err)=>{
+    console.log(err);
+}
 
 const SCRIPT_PATH = 'js/*.js';
 const SCSS_PATH = 'scss/*.scss';
@@ -56,7 +58,7 @@ gulp.task('scripts', () => {
 
 gulp.task('style', () => {
     return gulp.src(SCSS_PATH)
-            .pipe(plumber())
+            .pipe(plumber()).on('error', handleError)
             .pipe(sourcemaps.init())
             .pipe(sass({
                 outputStyle: 'compressed'
@@ -75,7 +77,7 @@ gulp.task('watch', () => {
     require( './server.js' )
     livereload.listen();
     gulp.watch( SCRIPT_PATH, [ 'scripts' ] );       
-    gulp.watch( SCSS_PATH, [ 'style' ] ); 
+    gulp.watch( SCSS_PATH, [ 'style' ] )
     gulp.watch( HTML_PATH, [ 'dom' ]);
 });
 
