@@ -15,7 +15,7 @@
     .knowledge-panel{
         position: absolute;
         left:20px;
-        bottom: 60px;
+        bottom: 65px;
 
         @media screen and (max-width: 663px){
             position: static;
@@ -98,6 +98,7 @@
         
         .art-dot{
             position: relative;
+            
             &:before{
                 position: absolute;
                 height:16px;
@@ -107,7 +108,7 @@
                 border-radius: 50%;
                 top:11px;
                 left:1px;
-                
+                transition: all ease-in-out 0.5s;
                
             }
             &:hover{
@@ -130,11 +131,12 @@
                 margin-top:10px;
                 color:$knowledge-subtitle-color;
                 font-size:1em;
+                font-weight: 400;
             }
 
             .art-info{
                 margin-top:10px;
-                font-weight: 400;
+                font-weight: 300;
             }
         }
     }      
