@@ -1,23 +1,9 @@
 #projects{
-   
-    height:680px;
     background-image: url('./images/project-bg4.jpg');
     background-size: cover;
     overflow: hidden;
    
-    @media screen and (max-width: 1018px){
-        height:950px;
-    }
-    @media screen and (max-width: 678px){
-        height:1450px;
-    }
-    &:before{
-        content: "";
-        position: absolute;
-        width:100%;
-        height: inherit;
-        background-color: rgba(0,0,0,0.6); 
-    }
+   
 
     .project-cards{
         margin:80px 0;
