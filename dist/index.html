@@ -43,9 +43,9 @@
         <li>
           <a href="#projects" class="navigation_link">Projekty</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="#blog" class="navigation_link">Blog</a>
-        </li>
+        </li> -->
         <li>
           <a href="#contact" class="navigation_link">Kontakt</a>
         </li>
@@ -184,7 +184,7 @@
           <h2 class="knowledge-title">
             Moja <br><span>historia</span>
           </h2>
-          <a href="#knowledge" class="knowledge-move">
+          <a href="#projects" class="knowledge-move">
             <p>Projekty
               <span class="fas fa-long-arrow-alt-right"></span>
             </p>
@@ -231,7 +231,17 @@
     </div>
   </section>
   <section id="projects">
-    <div id="container" class="projects-items">
+    <div id="container" class="project-items"> 
+        <div class="project-panel">
+            <h2 class="project-title">
+              Wykonane <br><span>projekty</span>
+            </h2>
+            <a href="#blog" class="project-move">
+              <p>Blog
+                <span class="fas fa-long-arrow-alt-right"></span>
+              </p>
+            </a>
+        </div>
       <div class="project-cards">
         <div class="project-card">
           <img src="https://placeimg.com/320/240/any" alt="" class="card-img">
@@ -281,11 +291,22 @@
       </div>
     </div>
   </section>
-  <section id="blog">
+  <!-- <section id="blog">
 
-  </section>
+  </section> -->
   <section id="contact">
-
+      <div id="container" class="contact-items"> 
+        <h2 class="contact-title">Zostaw <span>note</span></h2>
+        <hr class="contact-hr">
+        <p class="contact-title-sec">Napisz coś od siebie</p>
+        <form action="contact-mail" method="post" class="contact-form">
+          <input type="text" name="imie" class="form-name" placeholder="Twoje imie">
+          <input type="tel" name="tel" class="form-tel" placeholder="Twój numer telefonu">
+          <input type="email" name="email" class="form-email" placeholder="Twój adres e-mail">
+          <textarea name="wiadomosc" class="form-message" cols="40" rows="10" placeholder="Twoja wiadomość"></textarea>
+          <input type="submit" value="Wyślij" class="form-submit">
+        </form>
+      </div>
   </section>
 
 

@@ -2,8 +2,57 @@
     background-image: url('./images/project-bg4.jpg');
     background-size: cover;
     overflow: hidden;
-   
-   
+    font-family: $project-font;
+    .project-items{
+        position: relative;
+        padding-bottom:70px;
+    }
+    .project-panel{
+        position: absolute;
+        right:10px;
+        bottom: 30px;
+
+        @media screen and (max-width: 663px){
+            position: static;
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            margin-top: 50px;
+            margin-left: 18px;
+        }
+
+
+        .project-title{
+            font-size:3em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: $project-title-shadow;
+            span{
+                color:$knowledge-main-title-color;
+            }
+        }
+        .project-move{
+            position: absolute;
+            transform: rotate(90deg);
+            top: -100px;
+            right:1px;
+            font-size:1.2em;
+            text-decoration: none;
+            color:$knowledge-move-color;
+            font-weight: bold;
+            text-shadow: $project-move-shadow;
+           .fa-long-arrow-alt-right{
+            text-shadow: $project-move-shadow;
+           }
+            
+            @media screen and (max-width: 663px){
+                height:20px;
+                position: static;
+                align-self: center;
+            }
+        }
+    }
 
     .project-cards{
         margin:80px 0;
@@ -17,11 +66,11 @@
             margin:10px;
             position: relative;
             overflow: hidden;       
-            box-shadow: 0 5px 16px 0 rgba(0,0,0,0.4),0 6px 20px 0 rgba(0,0,0,0.4);
+            box-shadow: $project-card-shadow;
             height:240px;
            
             &:hover{
-               // background-color: rgba(0,0,0,0.5);
+               
                
                 .card-img{
                     
@@ -46,7 +95,7 @@
                 top: -20%;
                 left:33%;
                 font-size: 3em;
-                color:white;
+                color:$project-git-web-links;
                 transition: all ease-in-out 0.5s;
             }
             .card-gitlink{
@@ -54,7 +103,7 @@
                 top: -20%;
                 right:33%;
                 font-size: 3em;
-                color:white;
+                color:$project-git-web-links;
                 transition: all ease-in-out 0.8s;
 
             }
