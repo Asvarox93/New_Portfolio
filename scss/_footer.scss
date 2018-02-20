@@ -1,0 +1,48 @@
+#footer{
+    background-color:$footer-background;
+    height:250px;
+    border-top:$footer-border-top;
+
+    .footer-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:inherit;
+
+        &-logo{
+            font-family: $footer-logo-font;
+            font-size: 3em;
+            color:$footer-logo-color;
+            @media screen and (max-width: 360px){
+                font-size: 2.5em;
+            }
+        }
+
+        &-copyright{
+            font-family: $footer-font;
+            font-size: 1.2em;
+            color:#6A6D71;
+            margin: 10px 0 20px 0;
+        }
+
+        &-social{
+            display: flex;
+            flex-direction: row;
+
+            li:not(:last-child){
+                margin-right:15px;
+            }
+            
+            a{
+                color:$footer-social-color;
+                font-size: 2em;
+                padding:10px;
+
+                &:hover{
+                    color:$footer-social-color-hover;
+                }
+            }
+        }
+    }
+}

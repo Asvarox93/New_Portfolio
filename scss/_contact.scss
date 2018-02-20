@@ -24,12 +24,32 @@
     .contact-title-sec{
         margin:10px 0 10px 0;
     }
+    .contact-form-alert{
+        
+        .alert{
+            padding:30px;
+            
+
+            &-danger{
+                color:$contact-form-alert-danger;
+                border:2px solid $contact-form-alert-danger;
+            }
+            &-success{
+                color: 	$contact-form-alert-success;
+                border:2px solid $contact-form-alert-success;
+            }
+        }
+    }
     .contact-form{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
-        margin: 20px 10px 0 10px;
+        margin: 20px 10px 40px 10px;
+        
+        @media screen and (max-width: 737px){
+            justify-content: center;
+        }
 
     }
     .form-name,.form-tel,.form-email{
@@ -37,6 +57,14 @@
         width: calc(100% * (1/3) - 60px);
         margin-right:10px; 
         border: $contact-form-border;
+
+        @media screen and (max-width: 737px){
+            width:calc(100% * (1/2) );
+            margin-right: 0;
+            &:not(:first-child){
+                margin-top:10px;
+            }
+        }
        
     }
 
@@ -69,7 +97,7 @@
         width:100%;
         border: $contact-form-border;
         background-image:url(images/contact-input-ms.png);
-
+        resize: none;
         
     }
     
@@ -80,6 +108,7 @@
         text-transform: uppercase;
         font-size: 1.1em;
         cursor: pointer;
+        appearance: none;
 
         &:hover{
             background-color:$contact-form-submit-hover-bg;

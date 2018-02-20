@@ -168,7 +168,7 @@
       </div>
       <div class="skills-article-panel">
         <h2 class="skills-title-sec">
-          My <br><span>skills</span>
+          Moja <br><span>wiedza</span>
         </h2>
         <a href="#knowledge" class="skills-move">
           <p>Doświadczenie
@@ -236,8 +236,8 @@
             <h2 class="project-title">
               Wykonane <br><span>projekty</span>
             </h2>
-            <a href="#blog" class="project-move">
-              <p>Blog
+            <a href="#contact" class="project-move">
+              <p>kontakt
                 <span class="fas fa-long-arrow-alt-right"></span>
               </p>
             </a>
@@ -299,19 +299,42 @@
         <h2 class="contact-title">Zostaw <span>note</span></h2>
         <hr class="contact-hr">
         <p class="contact-title-sec">Napisz coś od siebie</p>
-        <form action="contact-mail" method="post" class="contact-form">
-          <input type="text" name="imie" class="form-name" placeholder="Twoje imie">
+        <div class="contact-form-alert"></div>
+        <form method="post" class="contact-form">
+          <input type="text" name="imie" class="form-name" placeholder="Twoje imie" required>
           <input type="tel" name="tel" class="form-tel" placeholder="Twój numer telefonu">
-          <input type="email" name="email" class="form-email" placeholder="Twój adres e-mail">
-          <textarea name="wiadomosc" class="form-message" cols="40" rows="10" placeholder="Twoja wiadomość"></textarea>
+          <input type="email" name="email" class="form-email" placeholder="Twój adres e-mail" required>
+          <textarea name="wiadomosc" class="form-message" cols="40" rows="10" placeholder="Twoja wiadomość" required></textarea>
           <input type="submit" value="Wyślij" class="form-submit">
         </form>
       </div>
   </section>
+  <section id="footer">
+    <div id="container" class="footer-items">
+        <h2 class="footer-items-logo">Sebastian Białek</h2>
+        <p class="footer-items-copyright">Własnoręcznie napisane &copy; 2018</p>
+        <ul class="footer-items-social">
+            <li>
+              <a href="https://facebook.com/sbialek" target="_blank">
+                <i class="social fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/sebbialek" target="_blank">
+                <i class="social fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/sebbialek/" target="_blank">
+                  <i class="social fab fa-linkedin-in"></i>
+              </a>
+          </li>
+        </ul>
+    </div>  
+  </section>
 
 
-
-  <!-- <script src="https://use.fontawesome.com/88d38cbab3.js"></script> -->
+  
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous">
     </script>
