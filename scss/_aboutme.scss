@@ -61,9 +61,7 @@
             font-weight: bold;
         }
         .info-describle{
-            margin:25px 0;
-            text-shadow: 1px 1px 1px #b9b9b9;
-            
+            margin:25px 0;            
         }
 
         .info-escape{
@@ -104,10 +102,9 @@
         background-image: url('./images/about-me-self.png');
         width:30%;
         height:500px;
-        
         background-size: contain;
         background-repeat: no-repeat;
-        background-position-y: 60px;
+        background-position-X:50px;
         position: relative;
         @media screen and (max-width: 1064px){
           width:100%;
